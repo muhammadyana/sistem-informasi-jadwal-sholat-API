@@ -6,22 +6,6 @@ var PrayTimes     = require('./PrayTimes');
 // Set up the express app
 const app = express();
 // console.log(`======= praytimes ${JSON.stringify(PrayTimes)}`);
-var date = new Date();
-var getSchedule = function(when){
-  console.log(`========= Date today ${moment().toDate()}`)
-  PrayTimes.setMethod('Karachi');
-  var toDay = moment();
-  if (when == 'tomorrow') {
-    date = toDay.add('1', 'days');
-  } else {
-    date = toDay;
-  }
-  
-  var lat = -6.300017; 
-  var lon = 106.670173;
-  return PrayTimes.getTimes(date.toDate(), [lat, lon], +7)
-};
-
 app.get('/api/v1/prayTimes', (req, res) => {
   PrayTimes.setMethod('Karachi');
   var toDay = moment();
