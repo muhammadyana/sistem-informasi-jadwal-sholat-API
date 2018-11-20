@@ -6,6 +6,15 @@ var PrayTimes     = require('./PrayTimes');
 // Set up the express app
 const app = express();
 // console.log(`======= praytimes ${JSON.stringify(PrayTimes)}`);
+const currentMoment = moment().subtract(30, 'days');
+const endMoment = moment().add(1, 'days');
+var praytimesSchedule = []
+while (currentMoment.isBefore(endMoment, 'day')) {
+  console.log(`Loop at ${currentMoment.format('YYYY-MM-DD')}`);
+  currentMoment.add(1, 'days');
+  console.log(` Praytimes by day = ${JSON.stringify(PrayTimes.getTimes(currentMoment.format('YYYY-MM-DD'), [-6.300017, 106.670173], +7))}`)
+  praytimesSchedule.push(PrayTimes.getTimes(currentMoment.format('YYYY-MM-DD'), [-6.300017, 106.670173], +7))
+}
 app.get('/api/v1/prayTimes', (req, res) => {
   PrayTimes.setMethod('Karachi');
   var toDay = moment();
@@ -15,6 +24,7 @@ app.get('/api/v1/prayTimes', (req, res) => {
   var lon = req.query.longitude;
   res.status(200).send({
     success: 'true',
+    schedules: praytimesSchedule,
     schedule: PrayTimes.getTimes(toDay.toDate(), [lat, lon], +7)
     // scedule: getSchedule()
   })
