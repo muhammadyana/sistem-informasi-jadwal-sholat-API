@@ -1,5 +1,6 @@
 // import express from 'express';
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
+var bodyParser    = require('body-parser');
 var express       = require('express');
 var moment        = require('moment');
 var PrayTimes     = require('./PrayTimes');
