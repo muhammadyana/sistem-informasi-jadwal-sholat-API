@@ -14,13 +14,17 @@
 ``` npm run start ```
 
 ### Use app
+running in local
 http://localhost:5000/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=10
+
+running in  heroku 
+https://siforlat-api.herokuapp.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=10
 
 ```json
 {
-	"latitude": -6.300060,
-	"longitude": 106.670181,
-	"duration": 10
+"latitude": -6.300060,
+"longitude": 106.670181,
+"duration": 10
 }
 ```
 
