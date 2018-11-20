@@ -6,15 +6,22 @@ var PrayTimes     = require('./PrayTimes');
 // Set up the express app
 const app = express();
 // console.log(`======= praytimes ${JSON.stringify(PrayTimes)}`);
-const currentMoment = moment().subtract(30, 'days');
-const endMoment = moment().add(1, 'days');
+// const currentMoment = moment().subtract(3, 'days');
+// const endMoment = moment().add(1, 'days');
+// console.log(`date after ${moment().add(30, 'days').format('YYYY-MM-DD')}`);
+const endDate = moment().add(30, 'days');
+const currentDate = moment();
 var praytimesSchedule = []
-while (currentMoment.isBefore(endMoment, 'day')) {
-  console.log(`Loop at ${currentMoment.format('YYYY-MM-DD')}`);
-  currentMoment.add(1, 'days');
-  console.log(` Praytimes by day = ${JSON.stringify(PrayTimes.getTimes(currentMoment.format('YYYY-MM-DD'), [-6.300017, 106.670173], +7))}`)
-  praytimesSchedule.push(PrayTimes.getTimes(currentMoment.format('YYYY-MM-DD'), [-6.300017, 106.670173], +7))
+// console.log(`curren date = ${currentDate.format('YYYY-MM-DD')}`);
+while (currentDate.isBefore(endDate, 'day')){
+  console.log(`Loop iteration up ${currentDate.format('YYYY-MM-DD')}`);
+  var loopDay = currentDate.format('YYYY-MM-DD');
+  var praytimesLoop = PrayTimes.getTimes(loopDay, [-6.300017, 106.670173], +7);
+  praytimesSchedule.push(praytimesLoop);
+  // currentDate.add(1, 'days');
+  currentDate.add(1, 'days');
 }
+
 app.get('/api/v1/prayTimes', (req, res) => {
   PrayTimes.setMethod('Karachi');
   var toDay = moment();
