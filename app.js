@@ -27,13 +27,13 @@ app.get('/api/v1/prayTimes', (req, res) => {
     // currentDate.add(1, 'days');
     currentDate.add(1, 'days');
   }
-  var toDay = moment();
-  var singleSchedule = PrayTimes.getTimes(toDay.toDate(), [lat, lon], +7);
-  singleSchedule.date = toDay.format('YYYY-MM-DD');
+  // var toDay = moment();
+  // var singleSchedule = PrayTimes.getTimes(toDay.toDate(), [lat, lon], +7);
+  // singleSchedule.date = toDay.format('YYYY-MM-DD');
   res.status(200).send({
     success: 'true',
-    schedules: praytimesSchedule,
-    schedule: singleSchedule
+    schedules: praytimesSchedule
+    // schedule: singleSchedule
   })
 });
 const PORT = 5000;
