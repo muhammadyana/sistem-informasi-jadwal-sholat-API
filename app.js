@@ -34,7 +34,6 @@ app.get('/api/v1/prayTimes', (req, res) => {
     success: 'true',
     schedules: praytimesSchedule,
     schedule: singleSchedule
-    // scedule: getSchedule()
   })
 });
 const PORT = 5000;
