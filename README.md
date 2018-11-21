@@ -1,5 +1,8 @@
 # Siforlat Backend use node.js
-### Instalation
+
+This API use PrayTimes.js library, you can visit [PrayTimes.org](http://praytimes.org/ "PrayTimes.org") for more information
+
+### Installation
 ``` npm install ```
 
 ``` npm install --save-dev nodemon ```
