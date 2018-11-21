@@ -6,11 +6,6 @@ var moment        = require('moment');
 var PrayTimes     = require('./PrayTimes');
 // Set up the express app
 const app = express();
-// console.log(`======= praytimes ${JSON.stringify(PrayTimes)}`);
-// const currentMoment = moment().subtract(3, 'days');
-// const endMoment = moment().add(1, 'days');
-// console.log(`date after ${moment().add(30, 'days').format('YYYY-MM-DD')}`);
-  
 app.get('/api/v1/prayTimes', (req, res) => {
   const endDate = moment().add(req.query.duration, 'days');
   const currentDate = moment();
