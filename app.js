@@ -15,7 +15,12 @@ io.on('connection', function(socket){
 });
 
 app.get('/', function(req, res){
-  res.send('<h1>Hello There</h1>');
+  var toDay = moment();
+  var singleSchedule = PrayTimes.getTimes(toDay.toDate(), [-6.300060, 106.670181], +7);
+  res.sendFile(__dirname + '/index.html',{schedule:singleSchedule});
+  console.log(`schedule today ${JSON.stringify(singleSchedule)}`);
+  console.log(singleSchedule);
+  // singleSchedule.date = toDay.format('YYYY-MM-DD');
 });
 
 app.get('/api/v1/prayTimes', (req, res) => {
