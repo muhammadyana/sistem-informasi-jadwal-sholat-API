@@ -33,7 +33,7 @@ https://siforlat-api.herokuapp.com/api/v1/prayTimes?latitude=-6.300060&longitude
 ### Example result
 ```json
 {
-  "success": "true",
+  "success": true,
   "schedules": [
     {
       "imsak": "04:02",

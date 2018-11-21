@@ -32,7 +32,7 @@ app.get('/api/v1/prayTimes', (req, res) => {
   // var singleSchedule = PrayTimes.getTimes(toDay.toDate(), [lat, lon], +7);
   // singleSchedule.date = toDay.format('YYYY-MM-DD');
   res.status(200).send({
-    success: 'true',
+    success: true,
     schedules: praytimesSchedule
     // schedule: singleSchedule
   })
