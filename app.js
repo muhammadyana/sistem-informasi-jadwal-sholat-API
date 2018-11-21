@@ -2,10 +2,22 @@
 // import bodyParser from 'body-parser';
 var bodyParser    = require('body-parser');
 var express       = require('express');
+var http          = require('http').Server(express());
+var io            = require('socket.io')(http);
+// var socket        = require('socket.io');
 var moment        = require('moment');
 var PrayTimes     = require('./PrayTimes');
 // Set up the express app
 const app = express();
+
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
+
+app.get('/', function(req, res){
+  res.send('<h1>Hello There</h1>');
+});
+
 app.get('/api/v1/prayTimes', (req, res) => {
   const endDate = moment().add(req.query.duration, 'days');
   const currentDate = moment();
