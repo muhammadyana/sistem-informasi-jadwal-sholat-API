@@ -18,10 +18,13 @@ This API use PrayTimes.js library, you can visit [PrayTimes.org](http://praytime
 
 ### Use app
 running in local
-http://localhost:5000/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=10
+http://localhost:5000/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
 
-running in  server
-http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=10
+running in  staging 
+https://siforlat-api.herokuapp.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
+
+running in  Production 
+http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
 
 ```json
 {
