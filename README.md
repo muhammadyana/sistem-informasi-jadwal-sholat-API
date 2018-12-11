@@ -45,66 +45,66 @@ http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181
 {
     "success": true,
     "schedules": [
-        {
-            "imsak": "04:06",
-            "fajr": "04:16",
-            "sunrise": "05:32",
-            "dhuhr": "11:46",
-            "asr": "15:13",
-            "sunset": "18:01",
-            "maghrib": "18:01",
-            "isha": "19:17",
-            "midnight": "23:46",
-            "date": "2018-12-11"
-        },
-        {
-            "imsak": "04:06",
-            "fajr": "04:16",
-            "sunrise": "05:32",
-            "dhuhr": "11:47",
-            "asr": "15:14",
-            "sunset": "18:01",
-            "maghrib": "18:01",
-            "isha": "19:18",
-            "midnight": "23:47",
-            "date": "2018-12-12"
-        },
-        {
-            "imsak": "04:07",
-            "fajr": "04:17",
-            "sunrise": "05:33",
-            "dhuhr": "11:47",
-            "asr": "15:14",
-            "sunset": "18:02",
-            "maghrib": "18:02",
-            "isha": "19:18",
-            "midnight": "23:47",
-            "date": "2018-12-13"
-        },
-        {
-            "imsak": "04:07",
-            "fajr": "04:17",
-            "sunrise": "05:33",
-            "dhuhr": "11:48",
-            "asr": "15:15",
-            "sunset": "18:02",
-            "maghrib": "18:02",
-            "isha": "19:19",
-            "midnight": "23:48",
-            "date": "2018-12-14"
-        },
-        {
-            "imsak": "04:07",
-            "fajr": "04:17",
-            "sunrise": "05:34",
-            "dhuhr": "11:48",
-            "asr": "15:15",
-            "sunset": "18:03",
-            "maghrib": "18:03",
-            "isha": "19:19",
-            "midnight": "23:48",
-            "date": "2018-12-15"
-        }
+      {
+        "imsak": "04:06",
+        "fajr": "04:16",
+        "sunrise": "05:32",
+        "dhuhr": "11:46",
+        "asr": "15:13",
+        "sunset": "18:01",
+        "maghrib": "18:01",
+        "isha": "19:17",
+        "midnight": "23:46",
+        "date": "2018-12-11"
+      },
+      {
+        "imsak": "04:06",
+        "fajr": "04:16",
+        "sunrise": "05:32",
+        "dhuhr": "11:47",
+        "asr": "15:14",
+        "sunset": "18:01",
+        "maghrib": "18:01",
+        "isha": "19:18",
+        "midnight": "23:47",
+        "date": "2018-12-12"
+      },
+      {
+        "imsak": "04:07",
+        "fajr": "04:17",
+        "sunrise": "05:33",
+        "dhuhr": "11:47",
+        "asr": "15:14",
+        "sunset": "18:02",
+        "maghrib": "18:02",
+        "isha": "19:18",
+        "midnight": "23:47",
+        "date": "2018-12-13"
+      },
+      {
+        "imsak": "04:07",
+        "fajr": "04:17",
+        "sunrise": "05:33",
+        "dhuhr": "11:48",
+        "asr": "15:15",
+        "sunset": "18:02",
+        "maghrib": "18:02",
+        "isha": "19:19",
+        "midnight": "23:48",
+        "date": "2018-12-14"
+      },
+      {
+        "imsak": "04:07",
+        "fajr": "04:17",
+        "sunrise": "05:34",
+        "dhuhr": "11:48",
+        "asr": "15:15",
+        "sunset": "18:03",
+        "maghrib": "18:03",
+        "isha": "19:19",
+        "midnight": "23:48",
+        "date": "2018-12-15"
+      }
     ]
 }
 ```
