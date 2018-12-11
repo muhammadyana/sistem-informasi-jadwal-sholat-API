@@ -110,5 +110,5 @@ http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181
 ```
 
 ### Source Code
-- Dashboard and frontend (Use Ruby) [Dashboard & Frontend use Ruby on Rails](https://github.com/muhammadyana/sistem-informasi-jadwal-sholat-siforlat "Dashboard & Frontend use Ruby on Rails")
-- Mobile Apps by Mochamad Arifin [Mobile Apps (Java and Kotlin)](https://github.com/flasharifin/Sistem-Informasi-Jadwal-Sholat-Mobile-App "Mobile Apps (Java and Kotlin)") 
+- Dashboard and frontend (Use Ruby) [Download Source Code  Dashboard & Frontend use Ruby on Rails](https://github.com/muhammadyana/sistem-informasi-jadwal-sholat-siforlat "Dashboard & Frontend use Ruby on Rails")
+- Mobile Apps by Mochamad Arifin [Download Source Code Mobile Apps (Java and Kotlin)](https://github.com/flasharifin/Sistem-Informasi-Jadwal-Sholat-Mobile-App "Mobile Apps (Java and Kotlin)") 
