@@ -7,6 +7,7 @@ var io            = require('socket.io')(http);
 // var socket        = require('socket.io');
 var moment        = require('moment');
 var PrayTimes     = require('./PrayTimes');
+const port = process.env.PORT || 5000;
 // Set up the express app
 const app = express();
 
@@ -49,7 +50,7 @@ app.get('/api/v1/prayTimes', (req, res) => {
   })
 });
 
-const port = process.env.PORT || 6000;
+
 app.listen(port, () => {
   console.log("App is running on port " + port);
 });
