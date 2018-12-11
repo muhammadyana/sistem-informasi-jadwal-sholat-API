@@ -1,5 +1,9 @@
 # Siforlat Backend use node.js
 
+[![Siforlat API](https://res.cloudinary.com/siforlat/image/upload/v1544540907/logo/siforlat-logo-black.png "Siforlat API")](https://siforlat.com/ "Siforlat API")
+
+------------
+
 This API use PrayTimes.js library, you can visit [PrayTimes.org](http://praytimes.org/ "PrayTimes.org") for more information
 
 ### Installation
@@ -39,128 +43,72 @@ http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181
 ### Example result
 ```json
 {
-  "success": true,
-  "schedules": [
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:26",
-      "dhuhr": "11:39",
-      "asr": "15:03",
-      "sunset": "17:52",
-      "maghrib": "17:52",
-      "isha": "19:06",
-      "midnight": "23:39",
-      "date": "2018-11-21"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:26",
-      "dhuhr": "11:39",
-      "asr": "15:03",
-      "sunset": "17:52",
-      "maghrib": "17:52",
-      "isha": "19:07",
-      "midnight": "23:39",
-      "date": "2018-11-22"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:27",
-      "dhuhr": "11:40",
-      "asr": "15:04",
-      "sunset": "17:53",
-      "maghrib": "17:53",
-      "isha": "19:07",
-      "midnight": "23:40",
-      "date": "2018-11-23"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:27",
-      "dhuhr": "11:40",
-      "asr": "15:04",
-      "sunset": "17:53",
-      "maghrib": "17:53",
-      "isha": "19:08",
-      "midnight": "23:40",
-      "date": "2018-11-24"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:27",
-      "dhuhr": "11:40",
-      "asr": "15:05",
-      "sunset": "17:53",
-      "maghrib": "17:53",
-      "isha": "19:08",
-      "midnight": "23:40",
-      "date": "2018-11-25"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:27",
-      "dhuhr": "11:41",
-      "asr": "15:05",
-      "sunset": "17:54",
-      "maghrib": "17:54",
-      "isha": "19:09",
-      "midnight": "23:41",
-      "date": "2018-11-26"
-    },
-    {
-      "imsak": "04:02",
-      "fajr": "04:12",
-      "sunrise": "05:27",
-      "dhuhr": "11:41",
-      "asr": "15:06",
-      "sunset": "17:54",
-      "maghrib": "17:54",
-      "isha": "19:09",
-      "midnight": "23:41",
-      "date": "2018-11-27"
-    },
-    {
-      "imsak": "04:03",
-      "fajr": "04:13",
-      "sunrise": "05:28",
-      "dhuhr": "11:41",
-      "asr": "15:06",
-      "sunset": "17:55",
-      "maghrib": "17:55",
-      "isha": "19:10",
-      "midnight": "23:41",
-      "date": "2018-11-28"
-    },
-    {
-      "imsak": "04:03",
-      "fajr": "04:13",
-      "sunrise": "05:28",
-      "dhuhr": "11:41",
-      "asr": "15:07",
-      "sunset": "17:55",
-      "maghrib": "17:55",
-      "isha": "19:10",
-      "midnight": "23:42",
-      "date": "2018-11-29"
-    },
-    {
-      "imsak": "04:03",
-      "fajr": "04:13",
-      "sunrise": "05:28",
-      "dhuhr": "11:42",
-      "asr": "15:07",
-      "sunset": "17:56",
-      "maghrib": "17:56",
-      "isha": "19:11",
-      "midnight": "23:42",
-      "date": "2018-11-30"
-    }
-  ]
+    "success": true,
+    "schedules": [
+        {
+            "imsak": "04:06",
+            "fajr": "04:16",
+            "sunrise": "05:32",
+            "dhuhr": "11:46",
+            "asr": "15:13",
+            "sunset": "18:01",
+            "maghrib": "18:01",
+            "isha": "19:17",
+            "midnight": "23:46",
+            "date": "2018-12-11"
+        },
+        {
+            "imsak": "04:06",
+            "fajr": "04:16",
+            "sunrise": "05:32",
+            "dhuhr": "11:47",
+            "asr": "15:14",
+            "sunset": "18:01",
+            "maghrib": "18:01",
+            "isha": "19:18",
+            "midnight": "23:47",
+            "date": "2018-12-12"
+        },
+        {
+            "imsak": "04:07",
+            "fajr": "04:17",
+            "sunrise": "05:33",
+            "dhuhr": "11:47",
+            "asr": "15:14",
+            "sunset": "18:02",
+            "maghrib": "18:02",
+            "isha": "19:18",
+            "midnight": "23:47",
+            "date": "2018-12-13"
+        },
+        {
+            "imsak": "04:07",
+            "fajr": "04:17",
+            "sunrise": "05:33",
+            "dhuhr": "11:48",
+            "asr": "15:15",
+            "sunset": "18:02",
+            "maghrib": "18:02",
+            "isha": "19:19",
+            "midnight": "23:48",
+            "date": "2018-12-14"
+        },
+        {
+            "imsak": "04:07",
+            "fajr": "04:17",
+            "sunrise": "05:34",
+            "dhuhr": "11:48",
+            "asr": "15:15",
+            "sunset": "18:03",
+            "maghrib": "18:03",
+            "isha": "19:19",
+            "midnight": "23:48",
+            "date": "2018-12-15"
+        }
+    ]
 }
 ```
+
+### Source Code
+- Dashboard and frontend (Use Ruby) [Dashboard & Frontend use Ruby on Rails](https://github.com/muhammadyana/sistem-informasi-jadwal-sholat-siforlat "Dashboard & Frontend use Ruby on Rails")
+- Mobile Apps by Mochamad Arifin [Mobile Apps (Java and Kotlin)](https://github.com/flasharifin/Sistem-Informasi-Jadwal-Sholat-Mobile-App "Mobile Apps (Java and Kotlin)") 
