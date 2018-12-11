@@ -3,6 +3,7 @@
 [![Siforlat API](https://res.cloudinary.com/siforlat/image/upload/v1544540907/logo/siforlat-logo-black.png "Siforlat API")](https://siforlat.com/ "Siforlat API")
 
 ------------
+## Sistem Informasi Jadwal Sholat
 
 This API use PrayTimes.js library, you can visit [PrayTimes.org](http://praytimes.org/ "PrayTimes.org") for more information
 
