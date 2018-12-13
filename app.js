@@ -10,6 +10,8 @@ var PrayTimes     = require('./PrayTimes');
 const port = process.env.PORT || 5000;
 // Set up the express app
 const app = express();
+// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 io.on('connection', function(socket){
   console.log('a user connected');
@@ -55,5 +57,5 @@ app.listen(port, () => {
   console.log("App is running on port " + port);
 });
 
-// app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
+
