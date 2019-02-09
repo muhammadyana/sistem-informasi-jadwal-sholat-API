@@ -38,7 +38,7 @@ running in  staging
 https://siforlat-api.herokuapp.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
 
 running in  Production 
-http://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
+https://api.siforlat.com/api/v1/prayTimes?latitude=-6.300060&longitude=106.670181&duration=100
 
 ```json
 {
